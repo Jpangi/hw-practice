@@ -8,15 +8,15 @@ If they're equal, return either one.
 Exercise 1 has been completed for you:
 */
 
-// const maxOfTwoNumbers = (x, y) => {
-//   if (x >= y) {
-//     return x;
-//   } else {
-//     return y;
-//   }
-// }
+const maxOfTwoNumbers = (x, y) => {
+  if (x >= y) {
+    return x;
+  } else {
+    return y;
+  }
+}
 
-// console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
 
 /*
 Exercise 2: isAdult()
@@ -29,14 +29,14 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-// const isAdult = (age) => {
-//     if(age > 18){
-//         return 'Adult'
-//     }else{
-//         return 'Minor'
-//     }
-// }
-// console.log('Exercise 2 Result:', isAdult(21));
+const isAdult = (age) => {
+    if(age > 18){
+        return 'Adult'
+    }else{
+        return 'Minor'
+    }
+}
+console.log('Exercise 2 Result:', isAdult(21));
 
 
 /*
@@ -52,14 +52,14 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-// const isCharAVowel = (vowel) => {
-//     if(vowel ==='a'|| vowel === 'e' || vowel === 'i' || vowel === 'o' || isCharAVowel === 'u'){
-//         return true;
-//     }else{
-//         return false;
-//     }
-// }
-// console.log('Exercise 3 Result:', isCharAVowel('a'));
+const isCharAVowel = (vowel) => {
+    if(vowel ==='a'|| vowel === 'e' || vowel === 'i' || vowel === 'o' || isCharAVowel === 'u'){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log('Exercise 3 Result:', isCharAVowel('a'));
 
 
 /*
@@ -74,12 +74,12 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-// const generateEmail = (name, domain) => {
-//     return `${name}, ${domain}`;
+const generateEmail = (name, domain) => {
+    return `${name}, ${domain}`;
 
-// }
+}
 
-// console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
 /*
 Exercise 5: greetUser()
@@ -93,19 +93,19 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-// const greetUser = (name, timeOfDay) =>{
-//     if(timeOfDay === 'morning'){
-//         return `Good ${timeOfDay}, ${name}`;
-//     }else if(timeOfDay === 'afternoon'){
-//         return `Good ${timeOfDay}, ${name}`;
-//     }else if(timeOfDay === 'evening'){
-//         return `Good ${timeOfDay}, ${name}`;
-//     }else{
-//         return 'What time of day is it?';
-//     }
-// }
+const greetUser = (name, timeOfDay) =>{
+    if(timeOfDay === 'morning'){
+        return `Good ${timeOfDay}, ${name}`;
+    }else if(timeOfDay === 'afternoon'){
+        return `Good ${timeOfDay}, ${name}`;
+    }else if(timeOfDay === 'evening'){
+        return `Good ${timeOfDay}, ${name}`;
+    }else{
+        return 'What time of day is it?';
+    }
+}
 
-// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 
 
@@ -120,20 +120,20 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-// const maxOfThree = (x,y,z) =>{
-//     if(x > y && x > z){
-//         return x;
-//     }else if(y > x && y > z){
-//         return y;
-//     }else if(z > x && z > y){
-//         return z;
-//     }else{
-//         return 'possible two max numbers'
-//     }
+const maxOfThree = (x,y,z) =>{
+    if(x > y && x > z){
+        return x;
+    }else if(y > x && y > z){
+        return y;
+    }else if(z > x && z > y){
+        return z;
+    }else{
+        return 'possible two max numbers'
+    }
     
-// }
+}
 
-// console.log('Exercise 6 Result:', maxOfThree(17, 4, 9));
+console.log('Exercise 6 Result:', maxOfThree(17, 4, 9));
 
 
 /*
@@ -149,10 +149,9 @@ Complete the exercise in the space below:
 */
 
 
-// const calculateTip = (amount, percentage) =>{
-//     return amount * (percentage/100)
-// }
-// console.log('Exercise 7 Result:', calculateTip(50, 20));
+const calculateTip = (amount, percentage) => amount * (percentage/100)
+
+console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 
 /*
@@ -169,15 +168,15 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-// const convertTemperature = (temp, scale) =>{
-//     if(scale === 'C'){
-//         return (temp * 1.8) + 32;
-//     }else{
-//         return (temp - 32)/2;
-//     }
-// }
+const convertTemperature = (temp, scale) =>{
+    if(scale === 'C'){
+        return (temp * 1.8) + 32;
+    }else{
+        return (temp - 32)/2;
+    }
+}
 
-// console.log('Exercise 8 Result:', convertTemperature(32, "F"));
+console.log('Exercise 8 Result:', convertTemperature(32, "F"));
 
 
 /*
@@ -196,19 +195,19 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-// const basicCalculator = (num1, num2, operation) =>{
-//     if(operation === 'add'){
-//         return num1 + num2;
-//     }else if(operation === 'subtract'){
-//         return num1 - num2;
-//     }else if(operation === 'multiply'){
-//         return num1 * num2;
-//     }else{
-//         return num1 / num2;
-//     }
-// }
+const basicCalculator = (num1, num2, operation) =>{
+    if(operation === 'add'){
+        return num1 + num2;
+    }else if(operation === 'subtract'){
+        return num1 - num2;
+    }else if(operation === 'multiply'){
+        return num1 * num2;
+    }else{
+        return num1 / num2;
+    }
+}
 
-// console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 10: calculateGrade()
@@ -225,21 +224,21 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-// const calculateGrade = (score) =>{
-//     if(score >= 90){
-//         return 'A';
-//     }else if(score <=89 && score >= 80){
-//         return 'B';
-//     }else if(score <=79 && score >= 70){
-//         return 'C';
-//     }else if(score <=69 && score >= 60){
-//         return 'D';
-//     }else{
-//         return 'F';
-//     }
-// }
+const calculateGrade = (score) =>{
+    if(score >= 90){
+        return 'A';
+    }else if(score <=89 && score >= 80){
+        return 'B';
+    }else if(score <=79 && score >= 70){
+        return 'C';
+    }else if(score <=69 && score >= 60){
+        return 'D';
+    }else{
+        return 'F';
+    }
+}
 
-// console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(85));
 
 
 /*
@@ -258,14 +257,14 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
 Complete the exercise in the space below:
 */
 
-// const createUsername = (firstName, lastName) =>{
-//     let fName = firstName.slice(0,3);
-//     let lName = lastName.slice(0, 3);
-//     let length = firstName.length + lastName.length;
-//     return `${fName}${lName}${length}`;
-// }
+const createUsername = (firstName, lastName) =>{
+    let fName = firstName.slice(0,3);
+    let lName = lastName.slice(0, 3);
+    let length = firstName.length + lastName.length;
+    return `${fName}${lName}${length}`;
+}
 
-// console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'));
+console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'));
 
 /*
 Exercise 12: numArgs()
@@ -276,11 +275,20 @@ This function should return the count of arguments passed to it when called.
 Complete the exercise in the space below:
 */
 
-const numArgs = ()=>{
-    for(i = 0; i < numArgs.length; i++){
-        return i + 1;
+
+// using arguments 
+function numArgs(){
+    let count = 0;
+    for(i = 0; i < arguments.length; i++){
+        count = count + 1;
+        
     }
+console.log(arguments)
+return count;
 }
+
+// using (...args)
+const numArgs = (...args) => args.length;
 
 
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
