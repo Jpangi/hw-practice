@@ -74,10 +74,8 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-const generateEmail = (name, domain) => {
-    return `${name}, ${domain}`;
+const generateEmail = (name, domain) => `${name}, ${domain}`;
 
-}
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
